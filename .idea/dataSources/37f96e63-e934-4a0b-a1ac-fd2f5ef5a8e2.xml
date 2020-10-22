@@ -13,7 +13,7 @@
     <database id="3" parent="1" name="studs">
       <ObjectId>17325</ObjectId>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>31775232</IntrospectionStateNumber>
+      <IntrospectionStateNumber>31775526</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|1325956|1325958|1
 sequence|table|1676143|1676145|1
@@ -3042,6 +3042,7 @@ sequence|table|1688022|1688024|1
 sequence|table|1681823|1681825|1
 sequence|table|1688052|1688054|1
 sequence|table|1688112|1688114|1
+sequence|table|1688179|1688181|1
 sequence|table|1670470|1670472|1
 sequence|table|1670486|1670488|1
 sequence|table|1670502|1670504|1
@@ -30087,7 +30088,7 @@ sequence|table|1685211|1685213|1
       <ObjectId>1354577</ObjectId>
       <StateNumber>29759611</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>31775233</IntrospectionStateNumber>
+      <IntrospectionStateNumber>31775527</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -36184,5 +36185,140 @@ sequence|table|1685211|1685213|1
       <Comment>system catalog schema</Comment>
       <Substituted>1</Substituted>
     </schema>
+    <sequence id="5484" parent="4268" name="organizations_id_seq">
+      <ObjectId>1688179</ObjectId>
+      <StateNumber>31775242</StateNumber>
+      <Owner>s282606</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+    </sequence>
+    <table id="5485" parent="4268" name="organizations">
+      <ObjectId>1688181</ObjectId>
+      <Owner>s282606</Owner>
+      <StateNumber>31775242</StateNumber>
+    </table>
+    <table id="5486" parent="4268" name="users">
+      <ObjectId>1688173</ObjectId>
+      <Owner>s282606</Owner>
+      <StateNumber>31775241</StateNumber>
+    </table>
+    <column id="5487" parent="5485" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <DefaultExpression>nextval(&apos;organizations_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="5488" parent="5485" name="owner">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="5489" parent="5485" name="name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="5490" parent="5485" name="x">
+      <Position>4</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="5491" parent="5485" name="y">
+      <Position>5</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="5492" parent="5485" name="creationdate">
+      <Position>6</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="5493" parent="5485" name="annualturnover">
+      <Position>7</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="5494" parent="5485" name="organizationtype">
+      <Position>8</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="5495" parent="5485" name="street">
+      <Position>9</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="5496" parent="5485" name="zipcode">
+      <Position>10</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="5497" parent="5485" name="location_x">
+      <Position>11</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="5498" parent="5485" name="location_y">
+      <Position>12</Position>
+      <DataType>double precision|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>701</TypeId>
+    </column>
+    <column id="5499" parent="5485" name="town">
+      <Position>13</Position>
+      <DataType>text|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>31775242</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <index id="5500" parent="5485" name="organizations_pkey">
+      <ObjectId>1688188</ObjectId>
+      <StateNumber>31775242</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="5501" parent="5485" name="organizations_pkey">
+      <ObjectId>1688189</ObjectId>
+      <StateNumber>31775242</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>organizations_pkey</UnderlyingIndexName>
+    </key>
+    <column id="5502" parent="5486" name="login">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>31775241</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="5503" parent="5486" name="password">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>31775241</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
   </database-model>
 </dataSource>

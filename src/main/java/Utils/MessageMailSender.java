@@ -16,7 +16,7 @@ public class MessageMailSender {
     }
     public static void SendMessage(String login, String psw, String mail) throws MessagingException {
         Properties props = new Properties();
-        props.put("mail.smtp.host", "smtp.yandex.ru");
+        props.put("mail.smtp.host", "smtp.mail.ru");
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.port", "465");
         props.put("mail.smtp.socketFactory.port", "465");

@@ -24,5 +24,11 @@
         <auth-type>PASSWORD</auth-type>
       </ssh-properties>
     </data-source>
+    <data-source name="postgres@localhost" uuid="569c22c9-0510-4051-a89a-4e24c84cd725">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>s282606</user-name>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>

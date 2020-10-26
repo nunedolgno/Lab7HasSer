@@ -9,15 +9,15 @@ import java.util.Properties;
 
 public class DatabaseCommunicator {
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/studs";
-    private static final String USER = "s282606";
-    private static final String PASS = "pvl571";
+    private static final String USER = "s286548";
+    private static final String PASS = "thx563";
     private static Connection connection;
     private static Statement statement;
     private static OrganizationsBase organizations;
     private static SecretBase users;
 
-    private String strSshUser = "s282606";
-    private String strSshPassword = "pvl571";
+    private String strSshUser = "s286548";
+    private String strSshPassword = "thx563";
     private String strSshHost = "se.ifmo.ru";
     private int nSshPort = 2222;
     private String strRemoteHost = "pg";
